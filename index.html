@@ -20,27 +20,28 @@
     <meta content="yes" name="apple-mobile-web-app-capable" />
     <meta content="yes" name="apple-touch-fullscreen" />
 
-    <link rel="preconnect" href="https://image.51wma.com/" />
+    <!-- <link rel="preconnect" href="https://image.51wma.com/">
 
-    <link rel="preconnect" href="https://www.googletagmanager.com" />
+<link rel="preconnect" href="https://www.googletagmanager.com">
 
-    <link rel="preconnect" href="https://analytics.google.com" />
+<link rel="preconnect" href="https://analytics.google.com">
 
-    <link rel="preload" href="https://m.51wma.com/static/js/swiper.min.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/js/jquery.min.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/css/style.css" as="style" />
-    <link rel="preload" href="https://m.51wma.com/static/js/global.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/js/index.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/js/main.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/js/search.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/js/swiper.min.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/css/jquery.fancybox.min.css" as="style" />
-    <link rel="preload" href="https://m.51wma.com/static/js/jquery.fancybox.min.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/js/download.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/feedback/feedback.css" as="style" />
-    <link rel="preload" href="https://m.51wma.com/static/css/secret.css" as="style" />
-    <link rel="preload" href="https://m.51wma.com/static/js/LetterAvatar.js" as="script" />
-    <link rel="preload" href="https://m.51wma.com/static/css/down_m.css" as="style" />
+<link rel="preload" href="https://m.51wma.com/static/js/swiper.min.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/jquery.min.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/css/style.css" as="style" />
+<link rel="preload" href="https://m.51wma.com/static/js/global.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/index.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/lazyload.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/main.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/search.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/swiper.min.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/css/jquery.fancybox.min.css" as="style" />
+<link rel="preload" href="https://m.51wma.com/static/js/jquery.fancybox.min.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/js/download.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/feedback/feedback.css" as="style" />
+<link rel="preload" href="https://m.51wma.com/static/css/secret.css" as="style" />
+<link rel="preload" href="https://m.51wma.com/static/js/LetterAvatar.js" as="script" />
+<link rel="preload" href="https://m.51wma.com/static/css/down_m.css" as="style" /> -->
 
     <link rel="canonical" href="https://www.51wma.com/en" />
     <link rel="alternate" href="https://m.51wma.com/en" hreflang="en" />
@@ -57,10 +58,10 @@
     <script src="static/js/jquery.min.js" type="text/javascript"></script>
     <script src="static/js/global.js" type="text/javascript"></script>
     <script src="static/js/index.js" type="text/javascript"></script>
+    <script src="static/js/lazyload.js" type="text/javascript"></script>
     <script src="static/js/main.js" type="text/javascript"></script>
     <script type="text/javascript" src="static/js/search.js"></script>
     <script type="text/javascript" src="static/js/swiper.min.js"></script>
-    <script async src="static/js/63356d72fba24809a47483421ecf9354.js"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -84,6 +85,74 @@
       }
     </script>
   </head>
+  <style>
+    /* banner */
+    .home-banner {
+      height: 4.25rem;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .home-banner a,
+    .home-banner img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .home-banner .text {
+      display: block;
+      width: 7.5rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      padding: 0 0.23rem;
+      position: absolute;
+      left: 0;
+      bottom: 0.3rem;
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 0.26rem;
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+
+    .home-banner .swiper-pagination-bullets {
+      width: 100%;
+      padding: 0.13rem;
+      background: #1f444d;
+      left: 0;
+      bottom: 0;
+      font-size: 0;
+      line-height: 1;
+    }
+
+    .home-banner .swiper-pagination-bullet {
+      width: 0.4rem;
+      height: 0.05rem;
+      display: inline-block;
+      border-radius: 0.03rem;
+      background: #fff;
+      opacity: 1;
+      margin-right: 0.06rem;
+    }
+
+    .home-banner .swiper-pagination-bullet-active {
+      background: #045d86;
+    }
+
+    .news-detail h3 {
+      font-size: 0.3rem;
+      color: #045d86;
+      font-weight: 700;
+      margin-bottom: 0.1rem;
+    }
+
+    .news-detail strong {
+      font-size: 0.28rem;
+    }
+  </style>
   <body>
     <div class="page" id="page">
       <header class="page-header">
@@ -186,93 +255,93 @@
           <div class="soft-list">
             <ul class="list" id="rmwy">
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16106">
-                  <img class="pic lazy loaded" src="static/picture/44ed9dm41qysfu0.jpg" alt="H Chronicles NTR (DEMO) APK" />
-                  <div class="tit tit-aline">H Chronicles NTR (DEMO)</div>
+                <a href="https://m.51wma.com/en/games/17275">
+                  <img class="pic lazy loaded" data-original="static/picture/daf6cihkh1bec9q.jpg" alt="Bicycle Factory APK" />
+                  <div class="tit tit-aline">Bicycle Factory</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16105">
-                  <img class="pic lazy loaded" src="static/picture/715c7q6p2ztwrgw.jpg" alt="Sly Pose APK" />
-                  <div class="tit tit-aline">Sly Pose</div>
+                <a href="https://m.51wma.com/en/games/17274">
+                  <img class="pic lazy loaded" data-original="static/picture/e17d4wehigwj4l9.jpg" alt="Game On APK" />
+                  <div class="tit tit-aline">Game On</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16104">
-                  <img class="pic lazy loaded" src="static/picture/11816mi98req5va.jpg" alt="Arabella 1890 APK" />
-                  <div class="tit tit-aline">Arabella 1890</div>
+                <a href="https://m.51wma.com/en/games/17273">
+                  <img class="pic lazy loaded" data-original="static/picture/c2b82gwhj6cy4cv.jpg" alt="Castle Miner APK" />
+                  <div class="tit tit-aline">Castle Miner</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16103">
-                  <img class="pic lazy loaded" src="static/picture/054a8nf7wkm9lys.jpg" alt="Commanding a Harem APK" />
-                  <div class="tit tit-aline">Commanding a Harem</div>
+                <a href="https://m.51wma.com/en/games/17272">
+                  <img class="pic lazy loaded" data-original="static/picture/c1b2evyie8j7la1.jpg" alt="Real City Car Driving 3D APK" />
+                  <div class="tit tit-aline">Real City Car Driving 3D</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16102">
-                  <img class="pic lazy loaded" src="static/picture/f75210agbqcm4py.jpg" alt="Lunar’s Chosen APK" />
-                  <div class="tit tit-aline">Lunar’s Chosen</div>
+                <a href="https://m.51wma.com/en/games/17271">
+                  <img class="pic lazy loaded" data-original="static/picture/18d06c97y40etke.jpg" alt="Ninja Tag Parkour APK" />
+                  <div class="tit tit-aline">Ninja Tag Parkour</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16101">
-                  <img class="pic lazy loaded" src="static/picture/8a931zryulozqss.jpg" alt="Lewd Town Adventures APK" />
-                  <div class="tit tit-aline">Lewd Town Adventures</div>
+                <a href="https://m.51wma.com/en/games/17270">
+                  <img class="pic lazy loaded" data-original="static/picture/5149eehnfbxqoci.jpg" alt="PlayChess APK" />
+                  <div class="tit tit-aline">PlayChess</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16100">
-                  <img class="pic lazy loaded" src="static/picture/e44efomotkbucqv.jpg" alt="Wishes APK" />
-                  <div class="tit tit-aline">Wishes</div>
+                <a href="https://m.51wma.com/en/games/17269">
+                  <img class="pic lazy loaded" data-original="static/picture/584b3cfm1cfgyxh.jpg" alt="Лагуна фермеров APK" />
+                  <div class="tit tit-aline">Лагуна фермеров</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16099">
-                  <img class="pic lazy loaded" src="static/picture/e7073qhoneobgjx.jpg" alt="Never Saint APK" />
-                  <div class="tit tit-aline">Never Saint</div>
+                <a href="https://m.51wma.com/en/games/17268">
+                  <img class="pic lazy loaded" data-original="static/picture/1faadunp42lwttg.jpg" alt="Identify this Car APK" />
+                  <div class="tit tit-aline">Identify this Car</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16098">
-                  <img class="pic lazy loaded" src="static/picture/a3a9fuhfp7e3rxt.jpg" alt="Divine Providence Fall APK" />
-                  <div class="tit tit-aline">Divine Providence Fall</div>
+                <a href="https://m.51wma.com/en/games/17267">
+                  <img class="pic lazy loaded" data-original="static/picture/b58bbw3jd7ar0pu.jpg" alt="Guardian War: Pixel Offline APK" />
+                  <div class="tit tit-aline">Guardian War: Pixel Offline</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16097">
-                  <img class="pic lazy loaded" src="static/picture/b5649clmtsv3q5l.jpg" alt="Labios Salvajes APK" />
-                  <div class="tit tit-aline">Labios Salvajes</div>
+                <a href="https://m.51wma.com/en/games/17266">
+                  <img class="pic lazy loaded" data-original="static/picture/83575vpnovluofx.jpg" alt="Pizza Place APK" />
+                  <div class="tit tit-aline">Pizza Place</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16096">
-                  <img class="pic lazy loaded" src="static/picture/d06a0ka1rdhpcz4.jpg" alt="Foreseeable Family APK" />
-                  <div class="tit tit-aline">Foreseeable Family</div>
+                <a href="https://m.51wma.com/en/games/17265">
+                  <img class="pic lazy loaded" data-original="static/picture/5c7ddxruow5zkn2.jpg" alt="Box Simulator APK" />
+                  <div class="tit tit-aline">Box Simulator</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16095">
-                  <img class="pic lazy loaded" src="static/picture/698d0gulppoa6yx.jpg" alt="Word Of Mouth – Season 1 APK" />
-                  <div class="tit tit-aline">Word Of Mouth – Season 1</div>
+                <a href="https://m.51wma.com/en/games/17264">
+                  <img class="pic lazy loaded" data-original="static/picture/cbec9gytlc30nhx.jpg" alt="Animal Transport Game 2023 APK" />
+                  <div class="tit tit-aline">Animal Transport Game 2023</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16094">
-                  <img class="pic lazy loaded" src="static/picture/2f5008gckff3yyv.jpg" alt="Welcome aboard APK" />
-                  <div class="tit tit-aline">Welcome aboard</div>
+                <a href="https://m.51wma.com/en/games/17263">
+                  <img class="pic lazy loaded" data-original="static/picture/a304cy569tor71b.jpg" alt="Diversión con motos APK" />
+                  <div class="tit tit-aline">Diversión con motos</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16093">
-                  <img class="pic lazy loaded" src="static/picture/8a5e4yixsmicqfj.jpg" alt="The Necromancer Arises APK" />
-                  <div class="tit tit-aline">The Necromancer Arises</div>
+                <a href="https://m.51wma.com/en/games/17262">
+                  <img class="pic lazy loaded" data-original="static/picture/8d592xrq0dhemgp.jpg" alt="FuguBowling APK" />
+                  <div class="tit tit-aline">FuguBowling</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/games/16092">
-                  <img class="pic lazy loaded" src="static/picture/63997ncwm6dullf.jpg" alt="Project Polaris APK" />
-                  <div class="tit tit-aline">Project Polaris</div>
+                <a href="https://m.51wma.com/en/games/17261">
+                  <img class="pic lazy loaded" data-original="static/picture/bc52dds4w2opumm.jpg" alt="Diamond Pop Match 3 APK" />
+                  <div class="tit tit-aline">Diamond Pop Match 3</div>
                 </a>
               </li>
             </ul>
@@ -288,93 +357,93 @@
           <div class="soft-list">
             <ul class="list" id="rjbb">
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16163">
-                  <img class="pic lazy loaded" src="static/picture/8ede7ztrbfdjhah.jpg" alt="Belfast Tele APK" />
-                  <div class="tit tit-aline">Belfast Tele</div>
+                <a href="https://m.51wma.com/en/apps/17347">
+                  <img class="pic lazy loaded" data-original="static/picture/83c241r5kiorkgc.jpg" alt="Vip select APK" />
+                  <div class="tit tit-aline">Vip select</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16162">
-                  <img class="pic lazy loaded" src="static/picture/dda93goezfrts2r.jpg" alt="Linksys APK" />
-                  <div class="tit tit-aline">Linksys</div>
+                <a href="https://m.51wma.com/en/apps/17346">
+                  <img class="pic lazy loaded" data-original="static/picture/c6c583zygwf5ast.jpg" alt="MyTIM APK" />
+                  <div class="tit tit-aline">MyTIM</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16161">
-                  <img class="pic lazy loaded" src="static/picture/1fefeq9amfmyebp.jpg" alt="Sonic cleaner: water eject app APK" />
-                  <div class="tit tit-aline">Sonic cleaner: water eject app</div>
+                <a href="https://m.51wma.com/en/apps/17345">
+                  <img class="pic lazy loaded" data-original="static/picture/11d87qqlbuzdjnk.jpg" alt="Catalyst Voting APK" />
+                  <div class="tit tit-aline">Catalyst Voting</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16160">
-                  <img class="pic lazy loaded" src="static/picture/5e2cccdgst6b1ie.jpg" alt="Remote For Sharp - Roku TV APK" />
-                  <div class="tit tit-aline">Remote For Sharp - Roku TV</div>
+                <a href="https://m.51wma.com/en/apps/17344">
+                  <img class="pic lazy loaded" data-original="static/picture/7ec65vlmuzdc5y7.jpg" alt="Freefy APK" />
+                  <div class="tit tit-aline">Freefy</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16159">
-                  <img class="pic lazy loaded" src="static/picture/87b947j2wfhkigl.jpg" alt="LED Flashlight - Flash Alert APK" />
-                  <div class="tit tit-aline">LED Flashlight - Flash Alert</div>
+                <a href="https://m.51wma.com/en/apps/17343">
+                  <img class="pic lazy loaded" data-original="static/picture/9894fjwkwr1laxq.jpg" alt="Virtual Competition Manager APK" />
+                  <div class="tit tit-aline">Virtual Competition Manager</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16158">
-                  <img class="pic lazy loaded" src="static/picture/71a59pvcgiv2ekh.jpg" alt="Remote For Insignia - Roku TV APK" />
-                  <div class="tit tit-aline">Remote For Insignia - Roku TV</div>
+                <a href="https://m.51wma.com/en/apps/17342">
+                  <img class="pic lazy loaded" data-original="static/picture/aab408jrlcn4as3.jpg" alt="C-SPAN Now APK" />
+                  <div class="tit tit-aline">C-SPAN Now</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16157">
-                  <img class="pic lazy loaded" src="static/picture/59458sj6kwuberv.jpg" alt="Freebox Remote APK" />
-                  <div class="tit tit-aline">Freebox Remote</div>
+                <a href="https://m.51wma.com/en/apps/17341">
+                  <img class="pic lazy loaded" data-original="static/picture/91d8cbolrdqv7zi.jpg" alt="ADMIRABLE MUNDIAL APK" />
+                  <div class="tit tit-aline">ADMIRABLE MUNDIAL</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16156">
-                  <img class="pic lazy loaded" src="static/picture/3c93einbym52avy.jpg" alt="VPN Proxy 2021 -Easy VPN APK" />
-                  <div class="tit tit-aline">VPN Proxy 2021 -Easy VPN</div>
+                <a href="https://m.51wma.com/en/apps/17340">
+                  <img class="pic lazy loaded" data-original="static/picture/8ac3660lxoy4fmo.jpg" alt="Russia Wallpapers APK" />
+                  <div class="tit tit-aline">Russia Wallpapers</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16155">
-                  <img class="pic lazy loaded" src="static/picture/3da8bwg1pqkrlfr.jpg" alt="Mini4WD-LapTimer APK" />
-                  <div class="tit tit-aline">Mini4WD-LapTimer</div>
+                <a href="https://m.51wma.com/en/apps/17339">
+                  <img class="pic lazy loaded" data-original="static/picture/8a129xjnoz26gyt.jpg" alt="Motivierende Bibelverse APK" />
+                  <div class="tit tit-aline">Motivierende Bibelverse</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16154">
-                  <img class="pic lazy loaded" src="static/picture/36c98f12kba70if.jpg" alt="Application Lock - Media Vault APK" />
-                  <div class="tit tit-aline">Application Lock - Media Vault</div>
+                <a href="https://m.51wma.com/en/apps/17338">
+                  <img class="pic lazy loaded" data-original="static/picture/4fb46q97syxkdct.jpg" alt="AIkids APK" />
+                  <div class="tit tit-aline">AIkids</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16153">
-                  <img class="pic lazy loaded" src="static/picture/480a9zd18vcowp7.jpg" alt="MaruWatch - Standard Clock APK" />
-                  <div class="tit tit-aline">MaruWatch - Standard Clock</div>
+                <a href="https://m.51wma.com/en/apps/17337">
+                  <img class="pic lazy loaded" data-original="static/picture/d05296ms3anzyvi.jpg" alt="NowForce APK" />
+                  <div class="tit tit-aline">NowForce</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16152">
-                  <img class="pic lazy loaded" src="static/picture/49f41feqi47ckvc.jpg" alt="My TPG APK" />
-                  <div class="tit tit-aline">My TPG</div>
+                <a href="https://m.51wma.com/en/apps/17336">
+                  <img class="pic lazy loaded" data-original="static/picture/57447vnmkeadsop.jpg" alt="Significado dos Sonhos APK" />
+                  <div class="tit tit-aline">Significado dos Sonhos</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16151">
-                  <img class="pic lazy loaded" src="static/picture/c29eeitah7hpewv.jpg" alt="Clean Speaker Water Remover APK" />
-                  <div class="tit tit-aline">Clean Speaker Water Remover</div>
+                <a href="https://m.51wma.com/en/apps/17335">
+                  <img class="pic lazy loaded" data-original="static/picture/260c7ezjlsbdtia.jpg" alt="Smart Digibook APK" />
+                  <div class="tit tit-aline">Smart Digibook</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16150">
-                  <img class="pic lazy loaded" src="static/picture/77cddr5ttighypx.jpg" alt="Desh Kannada Keyboard APK" />
-                  <div class="tit tit-aline">Desh Kannada Keyboard</div>
+                <a href="https://m.51wma.com/en/apps/17334">
+                  <img class="pic lazy loaded" data-original="static/picture/0eadcxbwnnk0pzk.jpg" alt="Hussary Surah Al Baqarah APK" />
+                  <div class="tit tit-aline">Hussary Surah Al Baqarah</div>
                 </a>
               </li>
               <li class="item">
-                <a href="https://m.51wma.com/en/apps/16149">
-                  <img class="pic lazy loaded" src="static/picture/d888dsij4coepzw.jpg" alt="Sportzify TV APK" />
-                  <div class="tit tit-aline">Sportzify TV</div>
+                <a href="https://m.51wma.com/en/apps/17332">
+                  <img class="pic lazy loaded" data-original="static/picture/e785cgm7nxojreg.jpg" alt="Asian Star Radio APK" />
+                  <div class="tit tit-aline">Asian Star Radio</div>
                 </a>
               </li>
             </ul>
@@ -389,70 +458,70 @@
 
           <div class="article-list">
             <a class="item" href="https://m.51wma.com/en/news/22">
-              <img class="pic" src="static/picture/2617512273176xcr1jwpkszltpm.webp" alt="Indus Battle Royale Mobile Begins Limited Closed Beta Testing News" />
+              <img class="pic" data-original="static/picture/2617512273176xcr1jwpkszltpm.webp" alt="Indus Battle Royale Mobile Begins Limited Closed Beta Testing News" />
               <div class="con">
                 <div class="tit">Indus Battle Royale Mobile Begins Limited Closed Beta Testing</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/21">
-              <img class="pic" src="static/picture/26174953fd57f5i4wytargfjbvb.webp" alt="Honkai: Star Rail Galactic Grand Prix Program Announced News" />
+              <img class="pic" data-original="static/picture/26174953fd57f5i4wytargfjbvb.webp" alt="Honkai: Star Rail Galactic Grand Prix Program Announced News" />
               <div class="con">
                 <div class="tit">Honkai: Star Rail Galactic Grand Prix Program Announced</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/20">
-              <img class="pic" src="static/picture/26174712e6446cugw0pnze292rs.webp" alt="Brazilian Football Star Vinicius Jr. Joins LOUD as Co-Owner News" />
+              <img class="pic" data-original="static/picture/26174712e6446cugw0pnze292rs.webp" alt="Brazilian Football Star Vinicius Jr. Joins LOUD as Co-Owner News" />
               <div class="con">
                 <div class="tit">Brazilian Football Star Vinicius Jr. Joins LOUD as Co-Owner</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/19">
-              <img class="pic" src="static/picture/2617445530637nlbtz57mgkbhbb.webp" alt="Pova Cup Season 4 Semifinals to Feature Top BGMI Teams News" />
+              <img class="pic" data-original="static/picture/2617445530637nlbtz57mgkbhbb.webp" alt="Pova Cup Season 4 Semifinals to Feature Top BGMI Teams News" />
               <div class="con">
                 <div class="tit">Pova Cup Season 4 Semifinals to Feature Top BGMI Teams</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/18">
-              <img class="pic" src="static/picture/2617424715483hojq0qlvw7ozsi.webp" alt="T3 Arena SS4 Lunar Royale Update: Prepare for Epic Battles and New Features News" />
+              <img class="pic" data-original="static/picture/2617424715483hojq0qlvw7ozsi.webp" alt="T3 Arena SS4 Lunar Royale Update: Prepare for Epic Battles and New Features News" />
               <div class="con">
                 <div class="tit">T3 Arena SS4 Lunar Royale Update: Prepare for Epic Battles and New Features</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/17">
-              <img class="pic" src="static/picture/26173818ca730gmmpkcd7wekwaj.webp" alt="The Seven Deadly Sins: Origin Interview Unveils Exciting Details on Gameplay and Features News" />
+              <img class="pic" data-original="static/picture/26173818ca730gmmpkcd7wekwaj.webp" alt="The Seven Deadly Sins: Origin Interview Unveils Exciting Details on Gameplay and Features News" />
               <div class="con">
                 <div class="tit">The Seven Deadly Sins: Origin Interview Unveils Exciting Details on Gameplay and Features</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/16">
-              <img class="pic" src="static/picture/261733407469a1kgdrtiomlfdox.webp" alt="Mobile Legends Ranked Season 31: New Rewards, Reset Tiers, and More News" />
+              <img class="pic" data-original="static/picture/261733407469a1kgdrtiomlfdox.webp" alt="Mobile Legends Ranked Season 31: New Rewards, Reset Tiers, and More News" />
               <div class="con">
                 <div class="tit">Mobile Legends Ranked Season 31: New Rewards, Reset Tiers, and More</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/15">
-              <img class="pic" src="static/picture/26172736d2df1otqgd5nqr6x2fh.webp" alt="Soul Knight Prequel Season System: Discover New Adventures Every Month News" />
+              <img class="pic" data-original="static/picture/26172736d2df1otqgd5nqr6x2fh.webp" alt="Soul Knight Prequel Season System: Discover New Adventures Every Month News" />
               <div class="con">
                 <div class="tit">Soul Knight Prequel Season System: Discover New Adventures Every Month</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/14">
-              <img class="pic" src="static/picture/2617231287709xo85y6zhtmf1xr.webp" alt="Embark on a Thrilling Adventure in Yuuna and the Haunted Hot Springs News" />
+              <img class="pic" data-original="static/picture/2617231287709xo85y6zhtmf1xr.webp" alt="Embark on a Thrilling Adventure in Yuuna and the Haunted Hot Springs News" />
               <div class="con">
                 <div class="tit">Embark on a Thrilling Adventure in Yuuna and the Haunted Hot Springs</div>
                 <p class="time">2023-12-26</p>
               </div>
             </a>
             <a class="item" href="https://m.51wma.com/en/news/13">
-              <img class="pic" src="static/picture/26172026dece7kf0hocua7wkyzq.webp" alt="Exciting Clan Games Await Clash of Clans Players in December 2023 News" />
+              <img class="pic" data-original="static/picture/26172026dece7kf0hocua7wkyzq.webp" alt="Exciting Clan Games Await Clash of Clans Players in December 2023 News" />
               <div class="con">
                 <div class="tit">Exciting Clan Games Await Clash of Clans Players in December 2023</div>
                 <p class="time">2023-12-26</p>

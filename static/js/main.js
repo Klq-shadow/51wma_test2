@@ -29,6 +29,12 @@ $(function () {
       $("#detailContMask").toggleClass("detailContMaskClose");
     });
   }
+
+  $("[data-original]").lazyload({
+    effect: "fadeIn",
+    threshold: 100,
+    failure_limit: 50,
+  });
 });
 
 //回到顶部及rem适应
