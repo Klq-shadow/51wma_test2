@@ -62,15 +62,7 @@
     <script type="text/javascript" src="static/js/search.js"></script>
     <script src="static/js/main.js" type="text/javascript" defer></script>
     <script type="text/javascript" src="static/js/swiper.min.js" defer></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "G-DFWS26V208");
-    </script>
     <script type="application/ld+json">
       {
         "@context": "http://schema.org",
@@ -86,7 +78,119 @@
     </script>
   </head>
   <style>
-   .home-banner,.soft-list .list,.soft-list .tit{overflow:hidden}.home-banner{height:4.25rem;position:relative}.home-banner a,.home-banner img{display:block;width:100%;height:100%;position:relative}.home-banner .text{display:block;width:7.5rem;height:.6rem;line-height:.6rem;padding:0 .23rem;position:absolute;left:0;bottom:.3rem;background:rgba(0,0,0,.6);font-size:.26rem;color:#fff;overflow:hidden;white-space:nowrap;text-overflow:ellipsis}.home-banner .swiper-pagination-bullets{width:100%;padding:.13rem;background:#1f444d;left:0;bottom:0;font-size:0;line-height:1}.home-banner .swiper-pagination-bullet{width:.4rem;height:.05rem;display:inline-block;border-radius:.03rem;background:#fff;opacity:1;margin-right:.06rem}.home-banner .swiper-pagination-bullet-active{background:#045d86}.news-detail h3{font-size:.3rem;color:#045d86;font-weight:700;margin-bottom:.1rem}.news-detail strong{font-size:.28rem}.section-hd{height:.9rem;line-height:.9rem;padding:0 .3rem;position:relative;z-index:100}.section-hd+.article-list{margin-top:-.2rem}.section-hd .title{font-size:.34rem;font-weight:700;color:#3f4140}.section-hd .more{position:absolute;top:0;right:.1rem;padding:0 .2rem;font-size:.24rem;color:#045d86}.soft-list{padding:.1rem 0}.soft-list .item{width:25%;float:left;text-align:center;position:relative;margin-bottom:.15rem}.soft-list .pic{display:block;margin:0 auto;width:1.3rem;height:1.3rem;border-radius:.2rem}.soft-list .tit{font-size:.24rem;color:#686b6a;height:.64rem;line-height:.32rem;padding:0 .2rem;margin-top:.1rem}.soft-list .tit-aline{height:.32rem}
+    .home-banner,
+    .soft-list .list,
+    .soft-list .tit {
+      overflow: hidden;
+    }
+    .home-banner {
+      height: 4.25rem;
+      position: relative;
+    }
+    .home-banner a,
+    .home-banner img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+    .home-banner .text {
+      display: block;
+      width: 7.5rem;
+      height: 0.6rem;
+      line-height: 0.6rem;
+      padding: 0 0.23rem;
+      position: absolute;
+      left: 0;
+      bottom: 0.3rem;
+      background: rgba(0, 0, 0, 0.6);
+      font-size: 0.26rem;
+      color: #fff;
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+    .home-banner .swiper-pagination-bullets {
+      width: 100%;
+      padding: 0.13rem;
+      background: #1f444d;
+      left: 0;
+      bottom: 0;
+      font-size: 0;
+      line-height: 1;
+    }
+    .home-banner .swiper-pagination-bullet {
+      width: 0.4rem;
+      height: 0.05rem;
+      display: inline-block;
+      border-radius: 0.03rem;
+      background: #fff;
+      opacity: 1;
+      margin-right: 0.06rem;
+    }
+    .home-banner .swiper-pagination-bullet-active {
+      background: #045d86;
+    }
+    .news-detail h3 {
+      font-size: 0.3rem;
+      color: #045d86;
+      font-weight: 700;
+      margin-bottom: 0.1rem;
+    }
+    .news-detail strong {
+      font-size: 0.28rem;
+    }
+    .section-hd {
+      height: 0.9rem;
+      line-height: 0.9rem;
+      padding: 0 0.3rem;
+      position: relative;
+      z-index: 100;
+    }
+    .section-hd + .article-list {
+      margin-top: -0.2rem;
+    }
+    .section-hd .title {
+      font-size: 0.34rem;
+      font-weight: 700;
+      color: #3f4140;
+    }
+    .section-hd .more {
+      position: absolute;
+      top: 0;
+      right: 0.1rem;
+      padding: 0 0.2rem;
+      font-size: 0.24rem;
+      color: #045d86;
+    }
+    .soft-list {
+      padding: 0.1rem 0;
+    }
+    .soft-list .item {
+      width: 25%;
+      float: left;
+      text-align: center;
+      position: relative;
+      margin-bottom: 0.15rem;
+    }
+    .soft-list .pic {
+      display: block;
+      margin: 0 auto;
+      width: 1.3rem;
+      height: 1.3rem;
+      border-radius: 0.2rem;
+    }
+    .soft-list .tit {
+      font-size: 0.24rem;
+      color: #686b6a;
+      height: 0.64rem;
+      line-height: 0.32rem;
+      padding: 0 0.2rem;
+      margin-top: 0.1rem;
+    }
+    .soft-list .tit-aline {
+      height: 0.32rem;
+    }
   </style>
   <body>
     <div class="page" id="page">
@@ -96,7 +200,7 @@
           <a class="logo-wrap logo_img" href="https://m.51wma.com/en">
             <img class="logo" src="static/picture/logo.png" alt="51wma" />
           </a>
-          <span data-url="https://m.51wma.com/en/search" class="serach-but"><img src="static/picture/serach.png" alt="search" /></span>
+          <span data-url="https://m.51wma.com/en/search" class="serach-but"><img src="https://m.51wma.com/static/img/serach.png" alt="search" /></span>
         </div>
         <nav class="navbar">
           <a class="nav-link on" href="https://m.51wma.com/en">Home</a>
@@ -162,19 +266,19 @@
           <div class="swiper-wrapper">
             <div class="swiper-slide">
               <a href="https://www.51wma.com/en/news/15" target="_blank">
-                <img src="static/picture/2811532823640lw7wdflzm9xusr.webp" alt="Soul Knight Prequel Season System: Discover New Adventures Every Month News" />
+                <img src="https://image.51wma.com/upload/202403/25/251749160189dY4QBw3uPyh3wb3.webp" alt="Soul Knight Prequel Season System: Discover New Adventures Every Month News" />
                 <p class="text t-o">Soul Knight Prequel Season System: Discover New Adventures Every Month</p>
               </a>
             </div>
             <div class="swiper-slide">
               <a href="https://www.51wma.com/en/news/14" target="_blank">
-                <img src="static/picture/2811524602e39so2x4qap5dxevn.webp" alt="Embark on a Thrilling Adventure in Yuuna and the Haunted Hot Springs News" />
+                <img src="https://image.51wma.com/upload/202403/25/2517492229d38xcQu9rwDUsp9ei.webp" alt="Embark on a Thrilling Adventure in Yuuna and the Haunted Hot Springs News" />
                 <p class="text t-o">Embark on a Thrilling Adventure in Yuuna and the Haunted Hot Springs</p>
               </a>
             </div>
             <div class="swiper-slide">
               <a href="https://www.51wma.com/en/news/12" target="_blank">
-                <img src="static/picture/281152049aa70cbfaqd5g6wros7.webp" alt="Exciting Updates Await in Honkai: Star Rail Version 1.6 News" />
+                <img src="https://image.51wma.com/upload/202403/25/251749365c966Z0cxPW2sGTpqlx.webp" alt="Exciting Updates Await in Honkai: Star Rail Version 1.6 News" />
                 <p class="text t-o">Exciting Updates Await in Honkai: Star Rail Version 1.6</p>
               </a>
             </div>
@@ -191,91 +295,91 @@
             <ul class="list" id="rmwy">
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17275">
-                  <img class="pic lazy loaded" src="static/picture/daf6cihkh1bec9q.jpg" alt="Bicycle Factory APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Bicycle Factory APK" />
                   <div class="tit tit-aline">Bicycle Factory</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17274">
-                  <img class="pic lazy loaded" src="static/picture/e17d4wehigwj4l9.jpg" alt="Game On APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Game On APK" />
                   <div class="tit tit-aline">Game On</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17273">
-                  <img class="pic lazy loaded" src="static/picture/c2b82gwhj6cy4cv.jpg" alt="Castle Miner APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Castle Miner APK" />
                   <div class="tit tit-aline">Castle Miner</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17272">
-                  <img class="pic lazy loaded" src="static/picture/c1b2evyie8j7la1.jpg" alt="Real City Car Driving 3D APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Real City Car Driving 3D APK" />
                   <div class="tit tit-aline">Real City Car Driving 3D</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17271">
-                  <img class="pic lazy loaded" src="static/picture/18d06c97y40etke.jpg" alt="Ninja Tag Parkour APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Ninja Tag Parkour APK" />
                   <div class="tit tit-aline">Ninja Tag Parkour</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17270">
-                  <img class="pic lazy loaded" src="static/picture/5149eehnfbxqoci.jpg" alt="PlayChess APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="PlayChess APK" />
                   <div class="tit tit-aline">PlayChess</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17269">
-                  <img class="pic lazy loaded" src="static/picture/584b3cfm1cfgyxh.jpg" alt="Лагуна фермеров APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Лагуна фермеров APK" />
                   <div class="tit tit-aline">Лагуна фермеров</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17268">
-                  <img class="pic lazy loaded" src="static/picture/1faadunp42lwttg.jpg" alt="Identify this Car APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Identify this Car APK" />
                   <div class="tit tit-aline">Identify this Car</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17267">
-                  <img class="pic lazy loaded" src="static/picture/b58bbw3jd7ar0pu.jpg" alt="Guardian War: Pixel Offline APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Guardian War: Pixel Offline APK" />
                   <div class="tit tit-aline">Guardian War: Pixel Offline</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17266">
-                  <img class="pic lazy loaded" src="static/picture/83575vpnovluofx.jpg" alt="Pizza Place APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Pizza Place APK" />
                   <div class="tit tit-aline">Pizza Place</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17265">
-                  <img class="pic lazy loaded" src="static/picture/5c7ddxruow5zkn2.jpg" alt="Box Simulator APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Box Simulator APK" />
                   <div class="tit tit-aline">Box Simulator</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17264">
-                  <img class="pic lazy loaded" src="static/picture/cbec9gytlc30nhx.jpg" alt="Animal Transport Game 2023 APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Animal Transport Game 2023 APK" />
                   <div class="tit tit-aline">Animal Transport Game 2023</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17263">
-                  <img class="pic lazy loaded" src="static/picture/a304cy569tor71b.jpg" alt="Diversión con motos APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Diversión con motos APK" />
                   <div class="tit tit-aline">Diversión con motos</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17262">
-                  <img class="pic lazy loaded" src="static/picture/8d592xrq0dhemgp.jpg" alt="FuguBowling APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="FuguBowling APK" />
                   <div class="tit tit-aline">FuguBowling</div>
                 </a>
               </li>
               <li class="item">
                 <a href="https://m.51wma.com/en/games/17261">
-                  <img class="pic lazy loaded" src="static/picture/bc52dds4w2opumm.jpg" alt="Diamond Pop Match 3 APK" />
+                  <img class="pic lazy loaded" src="https://image.51wma.com/upload/202403/22/aded3qGsBKLDb2R.jpg" alt="Diamond Pop Match 3 APK" />
                   <div class="tit tit-aline">Diamond Pop Match 3</div>
                 </a>
               </li>
@@ -496,4 +600,12 @@
       </div>
     </div>
   </body>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
+    gtag("config", "G-DFWS26V208");
+  </script>
 </html>
