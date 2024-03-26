@@ -56,13 +56,7 @@
       var BaseUrl = "https://www.51wma.com/";
       var base_url = "https://m.51wma.com/en/";
     </script>
-    <script src="static/js/jquery.min.js" type="text/javascript"></script>
-    <script src="static/js/global.js" type="text/javascript"></script>
-    <script src="static/js/index.js" type="text/javascript"></script>
-    <script src="static/js/lazyload.js" type="text/javascript"></script>
-    <script type="text/javascript" src="static/js/search.js"></script>
-    <script src="static/js/main.js" type="text/javascript" defer></script>
-    <script type="text/javascript" src="static/js/swiper.min.js" defer></script>
+
 
     <script type="application/ld+json">
       {
@@ -236,32 +230,6 @@
         </div>
       </div>
       <div class="mask" style="display: block"></div>
-      <script>
-        $(function () {
-          $(".current_lang").on("click", function () {
-            $(".menu_list").toggle();
-          });
-
-          $(".lang_menu").on("click", function () {
-            var lang = $(this).attr("data");
-            var dataurl = $(this).attr("data-url");
-            $.ajax({
-              url: "/lang/change",
-              type: "post",
-              data: { lang: lang },
-              success: function (res) {
-                if (res.code == 0) {
-                  alert(res.msg);
-                } else {
-                  location.href = dataurl;
-                }
-                return;
-              },
-            });
-            return;
-          });
-        });
-      </script>
       <section class="page-content">
         <div class="home-content home-banner">
           <div class="swiper-wrapper">
@@ -601,6 +569,13 @@
       </div>
     </div>
   </body>
+  <script src="static/js/jquery.min.js" type="text/javascript"></script>
+  <script src="static/js/global.js" type="text/javascript"></script>
+  <script src="static/js/index.js" type="text/javascript"></script>
+  <script src="static/js/lazyload.js" type="text/javascript"></script>
+  <script type="text/javascript" src="static/js/search.js"></script>
+  <script src="static/js/main.js" type="text/javascript" defer></script>
+  <script type="text/javascript" src="static/js/swiper.min.js" defer></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() {
@@ -609,4 +584,30 @@
     gtag("js", new Date());
     gtag("config", "G-DFWS26V208");
   </script>
+      <script>
+        $(function () {
+          $(".current_lang").on("click", function () {
+            $(".menu_list").toggle();
+          });
+
+          $(".lang_menu").on("click", function () {
+            var lang = $(this).attr("data");
+            var dataurl = $(this).attr("data-url");
+            $.ajax({
+              url: "/lang/change",
+              type: "post",
+              data: { lang: lang },
+              success: function (res) {
+                if (res.code == 0) {
+                  alert(res.msg);
+                } else {
+                  location.href = dataurl;
+                }
+                return;
+              },
+            });
+            return;
+          });
+        });
+      </script>
 </html>
