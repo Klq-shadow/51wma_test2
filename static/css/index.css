@@ -1,5 +1,6 @@
 @charset "UTF-8";
 
+.btn,
 h1,
 h2,
 h3,
@@ -21,7 +22,8 @@ h6 {
 }
 
 .page,
-.top-menu {
+.top-menu,
+mip-semi-fixed div[mip-semi-fixed-fixedStatus] {
     max-width: 750px
 }
 
@@ -40,6 +42,9 @@ body {
 }
 
 body,
+dd,
+dl,
+form,
 h1,
 h2,
 h3,
@@ -56,6 +61,7 @@ ul {
     list-style-type: none
 }
 
+em,
 i {
     font-style: normal
 }
@@ -70,7 +76,10 @@ img {
     border: 0
 }
 
-input {
+button,
+input,
+select,
+textarea {
     outline: 0;
     margin: 0;
     color: inherit;
@@ -104,11 +113,16 @@ input::-webkit-search-decoration {
     color: #999
 }
 
+
+.mip_botblock .pbtn,
 .text-center,
 .top-menu-body .bd li:nth-child(3n+2) {
     text-align: center
 }
 
+
+.related-games .section-hd .title,
+.related-news .section-hd .title,
 .section-top .section-hd .title,
 .text-left {
     text-align: left
@@ -120,8 +134,10 @@ input::-webkit-search-decoration {
 }
 
 .flex,
+.layer .layer-btns,
 .navbar,
 .section-category .list,
+.soft-recommend .bd,
 .top-list-body .list-hd {
     display: -webkit-box;
     display: -webkit-flex;
@@ -129,6 +145,7 @@ input::-webkit-search-decoration {
 }
 
 .flex-item,
+.layer .layer-btns .layer-btn,
 .navbar .nav-link {
     -webkit-box-flex: 1;
     -webkit-flex: 1;
@@ -461,6 +478,9 @@ input::-webkit-search-decoration {
     }
 }
 
+
+.layer-alert,
+.photo-browser .page[data-page=photo-browser-slides],
 .section-software .soft-list,
 .top-list .article-list {
     background: 0 0
@@ -471,6 +491,7 @@ input::-webkit-search-decoration {
 }
 
 .icon,
+.preloader,
 .top-menu-body .hd-item {
     display: inline-block
 }
@@ -538,6 +559,8 @@ input::-webkit-search-decoration {
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA4RpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDphYjUyZGZkNi02YjdmLTcxNGQtODJkMy01N2UyYzYyMzUyMjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QzMxQ0UzMjE3OERBMTFFN0I4ODNEODM5MEJFM0VENzIiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QzMxQ0UzMjA3OERBMTFFN0I4ODNEODM5MEJFM0VENzIiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MGVhNjEyNmItZWNmOC1kNDQwLTk4ZmMtNDllMTFlMTgyY2EzIiBzdFJlZjpkb2N1bWVudElEPSJhZG9iZTpkb2NpZDpwaG90b3Nob3A6MDZhZDI0YjMtNzczMC0xMWU3LTg5ZmYtOTMwYTBjNzU0NmQ0Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+aINiLwAAAdRJREFUeNqklc8rBGEYx8csWilH+VVKipYbDsoN5YBWseVMoUiolbuEDZsfkfwFu5bV7oE4KNxI2SyHTSnacnTxoza+j76zzY4xdnnq08z7zvt855n3eZ53snw+n2JiucBJGkEJeAcP4BLsgj3OpVi2iVgXmAeVJi+pJr0gBibBjn6Rqru3gTkuELEoGAcOYCcOzkW5JkAfm1mEM8ANXsAE2AQJQ5Q3ZBkMgQX6KIw2GWE3H8iedIJ1g9gJ0UyerYJ2+rip8SUoe7PEhRLZkcm+NhGjHXILxLyiJYI9oAxcM7JMbYO+pcClsjTEtkz2LB1L0FfMKYINHBwof7d9XutFsIiDu38Iar7Fqq7aPywc7sEzGAaFP3RWsrDjvK+wELwFBWCF7RdiMu18Xs5rXASvOGizEJTEuUCYY6k/OQSCHLfweq7qJvv0LWSwV+AHHSyxEXAGTunTz3VBlQvlM2rBYBoJeGKXSKFPgwH6PoqWlhSt2hdBcwbZbdV12Rh403pZovQwWyFGqloIqcx4mD4eaqQ4TfFT8tiCETAKqkAOyAc1nIsw4yK2Rt9vx1eCm30MZnn2eS2ijFFo+7cTO6CrMzm969j4Cjf+gr8Av9kv4FOAAQB8AWisBG+HMgAAAABJRU5ErkJggg==)
 }
 
+
+.index-focus .bd,
 body,
 html {
     height: 100%
@@ -671,6 +694,7 @@ html {
     position: relative
 }
 
+.con .tag a,
 .navbar .nav-link.on {
     color: #fff
 }
@@ -724,6 +748,7 @@ html {
     border-radius: 0
 }
 
+.index-focus-wrap,
 .top-menu-body .bd {
     padding-bottom: .15rem;
     overflow: hidden
@@ -838,6 +863,7 @@ html {
 }
 
 .article-list,
+.page-notfound,
 .section,
 .soft-list {
     background: #fff
